@@ -4,12 +4,14 @@ Ejemplo en Spring Boot utilizado para demostración de una api rest con Docker.
 
 En este ejemplo utilizamos un Dockerfile multistage donde se compila el código con maven y se ejecuta la aplicación.
 
-Pasos para ejecutar la app:
+**Pasos para ejecutar la app:**
 1) Crear la imagen a partir del Dockerfile
-  docker build -t "ejemplo-docker" .
+
+  **docker build -t "ejemplo-docker" .**
 
 2) Ejecutar la imagen creada en el paso 1)
-  docker run -d -p 8080:8080 ejemplo-docker
+
+  **docker run -d -p 8080:8080 ejemplo-docker**
   
 Debemos poder acceder a la api desde un navegar en la siguiente url http://localhost:8080/greeting
 
